@@ -1,0 +1,436 @@
+body {
+  background: url(../contents/muro_2.png), repeat-y;
+  margin: 0px;
+  background-position: center left;
+  background-attachment: fixed;
+  background-color: #000000;
+}
+
+h2.ctitle1, .ctitle2, .ctitle3 {
+  font-family: Impact, Arial;
+  color: #ffffff;
+  position: relative;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 22px;
+  width: 40%;
+  letter-spacing: 10px;
+  text-align: right;
+  padding: 8px;
+}
+
+h2.ctitle1 {
+  background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+;
+}
+
+h2.ctitle2 {
+  background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+
+}
+
+h2.ctitle3 {
+    background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+
+}
+
+p.content1, .content2, .content3 {
+  border: 0px;
+  font: 13pt 'Arsenal', monospace;
+  font-weight: bold;
+  color: #ffffff;
+  letter-spacing: 0px;
+  text-align: justify;
+  padding: 8px;
+}
+
+p.content1 {
+  background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+
+}
+
+p.content2 {
+  background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+
+}
+
+p.content3 {
+  background-image: url('../contents/crumpled\ red\ paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensure the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevent repeating the texture */
+
+}
+
+
+.container {
+  display: flex; /* Use flexbox to create a two-column layout */
+  flex-wrap: nowrap; /* Allow wrapping on smaller screens */
+  border: 2px solid rgba(0, 0, 255, 0);      /* Add a solid border */
+  width:  fit-content;
+  margin:auto;
+}
+
+.column {
+  padding: 0px; /* Add some padding inside each column */
+  box-sizing: content-box; /* Include padding in width calculation */
+  border: 2px solid rgba(0, 0, 255, 0);      /* Add a solid border */
+}
+
+.left {
+  flex: 1; /* Take up 1 part of the available space */
+  width: 180px;
+  border: 2px solid rgba(0, 0, 255, 0);      /* Add a solid border */
+
+}
+
+.right {
+  flex: 5; /* Take up 1 part of the available space */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Stack columns vertically on small screens */
+  }
+}
+
+/* Sidebar wrapper styling */
+.sidebar-wrapper {
+  height: 1000px;
+  margin-top: 20px;
+  position: sticky;
+  top: 0px;
+
+}
+/* Sidebar styles */
+.sidebar {
+  width: 250px;
+  background-image: url('../contents/crumpled red paper.png'); /* Path to your texture image */
+  background-size: cover; /* Ensures the texture covers the entire box */
+  background-repeat: no-repeat; /* Prevents repeating the texture */
+  padding: 20px;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  z-index: 1000; /* Ensures it appears above other elements */
+}
+
+/* Style for the main content */
+.content {
+  margin-right: 280px; /* Ensures main content doesn't overlap with the sidebar */
+  padding: 20px; /* Adds space inside the content area */
+}
+
+/* Style for links within the sidebar */
+.sidebar a {
+  color: #f6ff00; /* Link color */
+  text-decoration: none; /* Removes underline */
+  padding: 5px 0; /* Added padding for better spacing */
+}
+
+.sidebar a:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+/* Style for images within the sidebar */
+.sidebar img {
+  max-width: 100%; /* Responsive image */
+  height: auto; /* Maintains aspect ratio */
+}
+
+
+/* CRT */
+  @keyframes flicker {
+    0% {
+      opacity: 0.27861;
+    }
+    5% {
+      opacity: 0.34769;
+    }
+    10% {
+      opacity: 0.23604;
+    }
+    15% {
+      opacity: 0.90626;
+    }
+    20% {
+      opacity: 0.18128;
+    }
+    25% {
+      opacity: 0.83891;
+    }
+    30% {
+      opacity: 0.65583;
+    }
+    35% {
+      opacity: 0.67807;
+    }
+    40% {
+      opacity: 0.26559;
+    }
+    45% {
+      opacity: 0.84693;
+    }
+    50% {
+      opacity: 0.96019;
+    }
+    55% {
+      opacity: 0.08594;
+    }
+    60% {
+      opacity: 0.20313;
+    }
+    65% {
+      opacity: 0.71988;
+    }
+    70% {
+      opacity: 0.53455;
+    }
+    75% {
+      opacity: 0.37288;
+    }
+    80% {
+      opacity: 0.71428;
+    }
+    85% {
+      opacity: 0.70419;
+    }
+    90% {
+      opacity: 0.7003;
+    }
+    95% {
+      opacity: 0.36108;
+    }
+    100% {
+      opacity: 0.24387;
+    }
+  }
+  @keyframes textShadow {
+    0% {
+      text-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    5% {
+      text-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    10% {
+      text-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+        -0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    15% {
+      text-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+        -0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    20% {
+      text-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+        -3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    25% {
+      text-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+        -1.6125630401149584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    30% {
+      text-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+        -0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    35% {
+      text-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+        -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    40% {
+      text-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+        -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    45% {
+      text-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+        -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    50% {
+      text-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+        -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    55% {
+      text-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+        -2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    60% {
+      text-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+        -2.202193051050636px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    65% {
+      text-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+        -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    70% {
+      text-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+        -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    75% {
+      text-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+        -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    80% {
+      text-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+        -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    85% {
+      text-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+        -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    90% {
+      text-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+        -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    95% {
+      text-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+        -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    100% {
+      text-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+        -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+  }
+  
+  @keyframes boxShadow {
+    0% {
+      box-shadow: 0.4389924193300864px 0 1px rgba(0, 30, 255, 0.5),
+        -0.4389924193300864px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    5% {
+      box-shadow: 2.7928974010788217px 0 1px rgba(0, 30, 255, 0.5),
+        -2.7928974010788217px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    10% {
+      box-shadow: 0.02956275843481219px 0 1px rgba(0, 30, 255, 0.5),
+        -0.02956275843481219px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    15% {
+      box-shadow: 0.40218538552878136px 0 1px rgba(0, 30, 255, 0.5),
+        -0.40218538552878136px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    20% {
+      box-shadow: 3.4794037899852017px 0 1px rgba(0, 30, 255, 0.5),
+        -3.4794037899852017px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    25% {
+      box-shadow: 1.6125630401149584px 0 1px rgba(0, 30, 255, 0.5),
+        -1.6125630401149584px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    30% {
+      box-shadow: 0.7015590085143956px 0 1px rgba(0, 30, 255, 0.5),
+        -0.7015590085143956px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    35% {
+      box-shadow: 3.896914047650351px 0 1px rgba(0, 30, 255, 0.5),
+        -3.896914047650351px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    40% {
+      box-shadow: 3.870905614848819px 0 1px rgba(0, 30, 255, 0.5),
+        -3.870905614848819px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    45% {
+      box-shadow: 2.231056963361899px 0 1px rgba(0, 30, 255, 0.5),
+        -2.231056963361899px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    50% {
+      box-shadow: 0.08084290417898504px 0 1px rgba(0, 30, 255, 0.5),
+        -0.08084290417898504px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    55% {
+      box-shadow: 2.3758461067427543px 0 1px rgba(0, 30, 255, 0.5),
+        -2.3758461067427543px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    60% {
+      box-shadow: 2.202193051050636px 0 1px rgba(0, 30, 255, 0.5),
+        -2.202193051050636px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    65% {
+      box-shadow: 2.8638780614874975px 0 1px rgba(0, 30, 255, 0.5),
+        -2.8638780614874975px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    70% {
+      box-shadow: 0.48874025155497314px 0 1px rgba(0, 30, 255, 0.5),
+        -0.48874025155497314px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    75% {
+      box-shadow: 1.8948491305757957px 0 1px rgba(0, 30, 255, 0.5),
+        -1.8948491305757957px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    80% {
+      box-shadow: 0.0833037308038857px 0 1px rgba(0, 30, 255, 0.5),
+        -0.0833037308038857px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    85% {
+      box-shadow: 0.09769827255241735px 0 1px rgba(0, 30, 255, 0.5),
+        -0.09769827255241735px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    90% {
+      box-shadow: 3.443339761481782px 0 1px rgba(0, 30, 255, 0.5),
+        -3.443339761481782px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    95% {
+      box-shadow: 2.1841838852799786px 0 1px rgba(0, 30, 255, 0.5),
+        -2.1841838852799786px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+    100% {
+      box-shadow: 2.6208764473832513px 0 1px rgba(0, 30, 255, 0.5),
+        -2.6208764473832513px 0 1px rgba(255, 0, 80, 0.3), 0 0 3px;
+    }
+  }
+  
+  .crt::after {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(17, 0, 255, 0.062);
+    opacity: 0;
+    z-index: 9999;
+    pointer-events: none;
+    animation: flicker 0.15s infinite;
+  }
+  .crt::before {
+    content: " ";
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: linear-gradient(rgba(116, 116, 116, 0.123) 50%, rgba(0, 0, 0, 0.459) 50%),
+      linear-gradient(
+        90deg,
+        rgba(255, 0, 0, 0.06),
+        rgba(0, 255, 0, 0.02),
+        rgba(0, 0, 255, 0.06)
+      );
+    z-index: 9999;
+    background-size: 100% 2px, 3px 100%;
+    pointer-events: none;
+  }
+  .crt {
+    animation: textShadow 1.6s infinite, boxShadow 1.6s infinite;
+  }
+  @media screen and (max-width: 1200px) {
+    .wrapper {width: 450; height:200%}
+    .main {position:relative; margin-left:0; width:100%;}
+    .sidebar-left {position:relative; width:100%;}
+    .sidebar-right {position: relative; width:100%;}
+    .main .sidebar-left .sidebar-right {align-content:center; display:flex; flex-direction:column;}
+    #sticker, #sticker1, #sticker2, #sticker3, #sticker4, #sticker5, #sticker6, #sticker7 {display: none;}
+    
+  }
